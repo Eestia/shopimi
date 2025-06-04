@@ -21,7 +21,9 @@ body{
 .carousel {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
-  max-width: 610px;
+  width: 600px;
+  /* min-width: 600px; */
+  /* max-width: 610px; */
   /* margin-top: 30px; */
   position: absolute;
   z-index: 20;
@@ -37,8 +39,6 @@ body{
   align-items: center;
   position: relative;
   z-index: 300;
-  top: 0;
-  left: 0;
 }
 
 
@@ -64,7 +64,7 @@ body{
 #screen{
     position: absolute;
     width: 180%;
-    transform: translateX(-10px);
+    /* transform: translateX(-10px); */
     /* height: 500px; */
     /* left: 187px;
     top: 220px; */
