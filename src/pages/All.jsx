@@ -26,7 +26,7 @@ export default function All() {
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center', color: 'white' }}>Toutes les cartes (500)</h1>
+      <h1 id='titre-catalogue'>Notre catalogue de cartes</h1>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
