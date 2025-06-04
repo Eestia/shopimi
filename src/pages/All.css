@@ -1,0 +1,24 @@
+/* All.css */
+#carte {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 300px;
+    width: 140px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    transition: transform 0.2s;
+}
+
+#carte:hover {
+    transform: scale(1.05);
+    background-color: rgb(30, 30, 30);
+}

@@ -1,0 +1,101 @@
+.product-detail {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  margin: auto;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #000000;
+  background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: scrollParticles 10s linear infinite;
+  background-repeat: repeat;
+}
+
+@keyframes scrollParticles {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 200px;
+  }
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 250px;
+  height: 365px;
+  margin: 0 auto 20px;
+}
+
+.card-flip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: flipCard 6s infinite linear;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.card-face.back {
+  transform: rotateY(180deg);
+}
+
+@keyframes flipCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+#nom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Metal Mania", system-ui;
+    font-size: 35px; 
+    
+    background: linear-gradient(to top, red, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.back-button {
+  background-color: #9f0303;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.description-block {
+  max-width: 500px;
+  margin: 0 auto 20px; /* centré + un peu de marge en bas */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05); /* un petit fond discret */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
