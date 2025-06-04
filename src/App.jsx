@@ -8,14 +8,12 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function App() {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/all" element={<All />} /> {/* 👈 route ajoutée */}
       </Routes>
-    </Router>
   );
 }
 
