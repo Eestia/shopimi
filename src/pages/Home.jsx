@@ -74,27 +74,23 @@ export default function Home() {
       <h2>C’est l’heure du Du-du-duel !</h2>
     </div>
 
-      <section id='bg-anime'>
-    <img id='screen' src={psp2} alt="" />
-    <Slider {...settings} className="carousel">
-  {legendaryCards.map(card => (
-    <div className="slide" key={card.id}>
-      <img
-        src={card.card_images[0].image_url}
-        alt={card.name}
-        className="card-image"
-      />
-      <div className="card-info">
-        <h3>{card.name}</h3>
-        <p><strong>Prix :</strong> {card.price} €</p>
-        <p><strong>Note :</strong> ⭐ {card.rating}</p>
-        {card.type && <p><strong>Type :</strong> {card.type}</p>}
-        <Link to={`/products/${card.id}`} className="btn-details">Voir les détails</Link>
-      </div>
-    </div>
-  ))}
-</Slider>
-      </section>
+    <section id='bg-anime'>
+      <img id='screen' src={psp2} alt="" />
+      <Slider {...settings} className="carousel" id="CarouselPR">
+        {legendaryCards.map(card => (
+          <div className="slide" key={card.id}>
+            <img src={card.card_images[0].image_url} alt={card.name} className="card-image" />
+            <div className="card-info">
+              <h3>{card.name}</h3>
+              <p><strong>Prix :</strong> {card.price} €</p>
+              <p><strong>Note :</strong> ⭐ {card.rating}</p>
+              {card.type && <p><strong>Type :</strong> {card.type}</p>}
+              <Link to={`/products/${card.id}`} className="btn-details">Voir les détails</Link>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </section>
 
 
 
